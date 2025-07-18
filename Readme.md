@@ -7,6 +7,12 @@ A comprehensive web-based simulator for Spring Boot microservices architecture f
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-purple)
 
+
+
+## 🚀 Live Demo 
+
+ [View live demo](.   )
+
 ## 🚀 Features Overview
 
 ### Core Microservices Simulation
@@ -280,6 +286,147 @@ const CONFIG = {
 - **Async Processing**: Non-blocking operation patterns
 - **Load Balancing**: Traffic distribution strategies
 
+
+## Features
+
+- **Service Management**: Full CRUD operations for microservices
+- **Real-time Monitoring**: Metrics collection and health monitoring
+- **API Gateway**: Route management and configuration
+- **Deployment Pipeline**: Deployment tracking and management
+- **Testing Framework**: Test result aggregation and reporting
+- **Activity Logging**: System event tracking
+- **Spring Boot Actuator**: Health checks, metrics, and application info
+
+## Technology Stack
+
+- **Spring Boot 3.2.0**: Main framework
+- **Spring Cloud**: Service discovery and configuration
+- **Spring Data JPA**: Database access layer
+- **Spring Boot Actuator**: Production-ready features
+- **H2 Database**: In-memory database for development
+- **PostgreSQL**: Production database
+- **Maven**: Build tool
+- **Java 17**: Programming language
+
+## Quick Start
+
+### Prerequisites
+
+- Java 17 or higher
+- Maven 3.6+
+- PostgreSQL (for production)
+
+### Running the Application
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd spring-boot-backend
+   ```
+
+2. **Build the application**
+   ```bash
+   mvn clean install
+   ```
+
+3. **Run with H2 (Development)**
+   ```bash
+   mvn spring-boot:run
+   ```
+
+4. **Run with PostgreSQL (Production)**
+   ```bash
+   # Set environment variables
+   export DB_USERNAME=your_db_username
+   export DB_PASSWORD=your_db_password
+   
+   # Run with production profile
+   mvn spring-boot:run -Dspring-boot.run.profiles=production
+   ```
+
+## API Endpoints
+
+### Services
+- `GET /api/services` - Get all services
+- `GET /api/services/{id}` - Get service by ID
+- `POST /api/services` - Create new service
+- `PUT /api/services/{id}` - Update service
+- `DELETE /api/services/{id}` - Delete service
+- `GET /api/services/spring-boot` - Get Spring Boot services
+- `GET /api/services/stats` - Get service statistics
+
+### Metrics
+- `GET /api/metrics` - Get all metrics
+- `GET /api/metrics/latest` - Get latest metrics
+- `GET /api/metrics/service/{serviceId}` - Get metrics for specific service
+- `POST /api/metrics` - Create new metric
+
+### Deployments
+- `GET /api/deployments` - Get all deployments
+- `GET /api/deployments/{id}` - Get deployment by ID
+- `POST /api/deployments` - Create new deployment
+- `PUT /api/deployments/{id}` - Update deployment
+- `GET /api/deployments/stats` - Get deployment statistics
+
+### API Routes
+- `GET /api/routes` - Get all API routes
+- `GET /api/routes/active` - Get active routes
+- `POST /api/routes` - Create new route
+- `PUT /api/routes/{id}` - Update route
+
+### Test Results
+- `GET /api/test-results` - Get all test results
+- `GET /api/test-results/service/{serviceId}` - Get test results for service
+- `POST /api/test-results` - Create new test result
+
+### Activities
+- `GET /api/activities` - Get all activities
+- `GET /api/activities/service/{serviceId}` - Get activities for service
+- `POST /api/activities` - Create new activity
+
+## Spring Boot Actuator Endpoints
+
+- `GET /actuator/health` - Application health status
+- `GET /actuator/info` - Application information
+- `GET /actuator/metrics` - Application metrics
+- `GET /actuator/env` - Environment properties
+- `GET /actuator/beans` - Spring beans information
+- `GET /actuator/configprops` - Configuration properties
+
+## Configuration
+
+### Application Properties
+
+The application uses `application.properties` for configuration:
+
+```properties
+# Basic Configuration
+spring.application.name=microservices-simulator
+server.port=8080
+
+# Database Configuration
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.jpa.hibernate.ddl-auto=create-drop
+
+# Actuator Configuration
+management.endpoints.web.exposure.include=*
+management.endpoint.health.show-details=always
+```
+
+### Production Configuration
+
+For production, use `application-production.properties`:
+
+```properties
+# Production Database
+spring.datasource.url=jdbc:postgresql://localhost:5432/microservices_db
+spring.datasource.username=${DB_USERNAME}
+spring.datasource.password=${DB_PASSWORD}
+
+# Security
+management.endpoints.web.exposure.include=health,info,metrics,prometheus
+management.endpoint.health.show-details=when-authorized
+```
 
 ## Database Schema
 
