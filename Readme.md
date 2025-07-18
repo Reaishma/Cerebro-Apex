@@ -11,7 +11,7 @@ A comprehensive web-based simulator for Spring Boot microservices architecture f
 
 ## 🚀 Live Demo 
 
- [View live demo](.   )
+ [View live demo](https://reaishma.github.io/Cerebro-Apex/)
 
 ## 🚀 Features Overview
 
