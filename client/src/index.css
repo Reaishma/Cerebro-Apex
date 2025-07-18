@@ -1,1 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(222, 84%, 4.9%);
+  --foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217, 32.6%, 17.5%);
+  --muted-foreground: hsl(215, 20.2%, 65.1%);
+  --popover: hsl(222, 84%, 4.9%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --card: hsl(222, 84%, 4.9%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217, 32.6%, 17.5%);
+  --input: hsl(217, 32.6%, 17.5%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(222, 84%, 4.9%);
+  --secondary: hsl(217, 32.6%, 17.5%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --accent: hsl(217, 32.6%, 17.5%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(207, 90%, 54%);
+  --success: hsl(142, 71%, 45%);
+  --warning: hsl(35, 91%, 52%);
+  --danger: hsl(0, 62.8%, 30.6%);
+  --spring: hsl(83, 45%, 49%);
+  --microservice: hsl(284, 60%, 45%);
+  --gateway: hsl(14, 100%, 57%);
+  --nginx: hsl(150, 100%, 30%);
+  --aws: hsl(35, 100%, 50%);
+  --kafka: hsl(210, 17%, 10%);
+  --prometheus: hsl(14, 83%, 53%);
+  --grafana: hsl(25, 100%, 50%);
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: hsl(222, 84%, 4.9%);
+  --foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217, 32.6%, 17.5%);
+  --muted-foreground: hsl(215, 20.2%, 65.1%);
+  --popover: hsl(222, 84%, 4.9%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --card: hsl(222, 84%, 4.9%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217, 32.6%, 17.5%);
+  --input: hsl(217, 32.6%, 17.5%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(222, 84%, 4.9%);
+  --secondary: hsl(217, 32.6%, 17.5%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --accent: hsl(217, 32.6%, 17.5%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(207, 90%, 54%);
+  --success: hsl(142, 71%, 45%);
+  --warning: hsl(35, 91%, 52%);
+  --danger: hsl(0, 62.8%, 30.6%);
+  --spring: hsl(83, 45%, 49%);
+  --microservice: hsl(284, 60%, 45%);
+  --gateway: hsl(14, 100%, 57%);
+  --nginx: hsl(150, 100%, 30%);
+  --aws: hsl(35, 100%, 50%);
+  --kafka: hsl(210, 17%, 10%);
+  --prometheus: hsl(14, 83%, 53%);
+  --grafana: hsl(25, 100%, 50%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer components {
+  .glassmorphism {
+    background: rgba(30, 41, 59, 0.8);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .service-node {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .service-node:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  }
+
+  .terminal-cursor {
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  .spring-service {
+    background: linear-gradient(135deg, rgba(134, 239, 172, 0.1) 0%, rgba(134, 239, 172, 0.05) 100%);
+    border: 1px solid rgba(134, 239, 172, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+  }
+
+  .spring-service:hover {
+    background: linear-gradient(135deg, rgba(134, 239, 172, 0.2) 0%, rgba(134, 239, 172, 0.1) 100%);
+    border-color: rgba(134, 239, 172, 0.3);
+    transform: translateY(-2px);
+  }
+
+  .text-spring {
+    color: hsl(83, 45%, 49%);
+  }
+
+  .status-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .connection-line {
+    stroke-dasharray: 5,5;
+    animation: dash 1s linear infinite;
+  }
+
+  @keyframes dash {
+    to { stroke-dashoffset: -10; }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .spring-service {
+    background: linear-gradient(135deg, hsl(217, 32.6%, 17.5%), hsl(83, 45%, 25%));
+    border-color: hsl(83, 45%, 49%);
+  }
+
+  .gateway-service {
+    background: linear-gradient(135deg, hsl(217, 32.6%, 17.5%), hsl(14, 50%, 25%));
+    border-color: hsl(14, 100%, 57%);
+  }
+
+  .database-service {
+    background: linear-gradient(135deg, hsl(217, 32.6%, 17.5%), hsl(207, 50%, 25%));
+    border-color: hsl(207, 90%, 54%);
+  }
+
+  .queue-service {
+    background: linear-gradient(135deg, hsl(217, 32.6%, 17.5%), hsl(35, 50%, 25%));
+    border-color: hsl(35, 91%, 52%);
+  }
+
+  .monitoring-service {
+    background: linear-gradient(135deg, hsl(217, 32.6%, 17.5%), hsl(14, 50%, 25%));
+    border-color: hsl(14, 83%, 53%);
+  }
+
+  .spring-service {
+    background: linear-gradient(135deg, rgba(134, 239, 172, 0.1) 0%, rgba(134, 239, 172, 0.05) 100%);
+    border: 1px solid rgba(134, 239, 172, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+  }
+
+  .spring-service:hover {
+    background: linear-gradient(135deg, rgba(134, 239, 172, 0.2) 0%, rgba(134, 239, 172, 0.1) 100%);
+    border-color: rgba(134, 239, 172, 0.3);
+    transform: translateY(-2px);
+  }
+
+  .text-spring {
+    color: hsl(83, 45%, 49%);
+  }
+}
 
