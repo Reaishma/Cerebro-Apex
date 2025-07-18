@@ -1,4 +1,4 @@
-# Spring Boot Microservices Architecture Simulator
+# Cerebro-Apex 
 
 A comprehensive web-based simulator for Spring Boot microservices architecture featuring integrated testing frameworks, backend architecture visualization, and frontend development tools. This educational tool provides real-time visualization of microservices patterns, infrastructure components, testing scenarios, and full-stack development architecture in a single interactive application.
 
