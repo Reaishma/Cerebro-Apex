@@ -280,6 +280,27 @@ const CONFIG = {
 - **Async Processing**: Non-blocking operation patterns
 - **Load Balancing**: Traffic distribution strategies
 
+
+## Database Schema
+
+The application automatically creates the following tables:
+- `services` - Microservice configurations
+- `metrics` - Performance metrics
+- `deployments` - Deployment records
+- `api_routes` - API gateway routes
+- `test_results` - Test execution results
+- `activities` - System activities
+
+## Sample Data
+
+The application includes sample data initialization through `data.sql`:
+- 7 preconfigured services (API Gateway, User Service, Order Service, etc.)
+- Sample metrics and performance data
+- Deployment history
+- API route configurations
+- Test results and activitie
+
+
 ## 🔧 Troubleshooting
 
 ### Common Issues
@@ -296,6 +317,10 @@ Enable debug logging by opening browser console:
 localStorage.setItem('debugMode', 'true');
 location.reload();
 ```
+
+## Author 🧑‍💻 
+
+**Reaishma N**
 
 ## 🤝 Contributing
 
@@ -337,4 +362,3 @@ For questions, issues, or contributions:
 
 **Built with ❤️ for the microservices community**
 
-*This simulator is designed for educational purposes and demonstrations. It simulates microservices patterns without requiring actual infrastructure setup.*
