@@ -245,6 +245,44 @@ const CONFIG = {
 - **Lighthouse Scores**: Performance, accessibility, and SEO metrics
 - **Component Count**: Architecture complexity tracking
 
+##🚀 Features 
+
+
+Containerization and Orchestration
+1. *Docker*: Containerization platform for packaging applications.
+2. *Kubernetes*: Container orchestration platform for managing containerized applications.
+3. *Cluster Visualization*: Visualizing Kubernetes clusters for better management.
+
+Data Pipeline and Processing
+1. *Apache Spark*: Big data processing engine for large-scale data processing.
+2. *AWS Glue*: Fully managed extract, transform, and load (ETL) service for data preparation.
+3. *Apache Beam*: Unified programming model for both batch and streaming data processing.
+
+Machine Learning Interpretability
+1. *SHAP (SHapley Additive exPlanations)*: Technique for explaining machine learning model predictions.
+2. *LIME (Local Interpretable Model-agnostic Explanations)*: Technique for explaining machine learning model predictions.
+
+Testing Frameworks
+1. *Jest*: JavaScript testing framework for React applications.
+2. *Cypress*: End-to-end testing framework for web applications.
+3. *Mocha*: JavaScript testing framework for Node.js applications.
+
+Microservices Architecture
+1. *Spring Boot*: Framework for building microservices-based applications.
+2. *Eureka*: Service discovery platform for managing microservices.
+3. *API Gateway*: Entry point for API requests, using AWS or NGINX.
+4. *Load Balancer*: Distributing traffic across multiple instances, using NGINX.
+5. *Message Queues*: RabbitMQ or Apache Kafka for message passing between microservices.
+
+Monitoring and Logging
+1. *Prometheus*: Monitoring system for collecting metrics.
+2. *Grafana*: Visualization platform for monitoring metrics.
+3. *ELK Stack (Elasticsearch, Logstash, Kibana)*: Logging and monitoring platform.
+
+Frontend and Backend
+1. *React*: Frontend framework for building user interfaces.
+2. *Spring Boot*: Backend framework for building RESTful APIs.
+
 ## 🚀 Advanced Features
 
 ### Real-time Simulation
