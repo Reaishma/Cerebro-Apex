@@ -277,6 +277,8 @@ Microservices Architecture
 4. *Load Balancer*: Distributing traffic across multiple instances, using NGINX.
 5. *Message Queues*: RabbitMQ or Apache Kafka for message passing between microservices.
 
+![Messaging](https://github.com/Reaishma/Cerebro-Apex/blob/main/Screenshot_20250903-183113_1.jpg)
+
 Monitoring and Logging
 1. *Prometheus*: Monitoring system for collecting metrics.
 2. *Grafana*: Visualization platform for monitoring metrics.
