@@ -35,6 +35,9 @@ A comprehensive web-based simulator for Spring Boot microservices architecture f
 - **Test Scenarios**: Unit, integration, and E2E testing patterns
 
 ### Backend Architecture Visualization
+
+![Backend implementation](https://github.com/Reaishma/Cerebro-Apex/blob/main/Screenshot_20250903-183810_1.jpg)
+
 - **Spring Boot Layers**: Controllers, Services, Repositories, and Models
 - **Database Integration**: PostgreSQL, Redis Cache, and Elasticsearch simulation
 - **API Documentation**: Interactive REST endpoint explorer
