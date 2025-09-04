@@ -24,6 +24,9 @@ A comprehensive web-based simulator for Spring Boot microservices architecture f
 - **Inter-Service Communication**: Synchronous and asynchronous messaging
 
 ### Testing Framework Integration
+
+![Testing framework](https://github.com/Reaishma/Cerebro-Apex/blob/main/Screenshot_20250903-183120_1.jpg)
+
 - **Jest Integration**: Unit testing framework with real-time execution
 - **Mocha/Chai Support**: Behavior-driven development testing
 - **Cypress Integration**: End-to-end testing simulation
