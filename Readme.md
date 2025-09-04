@@ -156,6 +156,9 @@ Access the simulator at `http://localhost:5000`
 5. **Resource Monitoring**: Track CPU, memory, and network usage
 
 ### Monitoring Stack Tab
+
+![Monitoring](https://github.com/Reaishma/Cerebro-Apex/blob/main/Screenshot_20250729-162944_1.jpg)
+
 1. **Metrics Collection**: Configure Prometheus-style metrics
 2. **Visualization**: Create Grafana-inspired dashboards
 3. **Alerting**: Set up threshold-based notifications
