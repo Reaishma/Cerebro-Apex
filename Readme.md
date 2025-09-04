@@ -46,6 +46,9 @@ A comprehensive web-based simulator for Spring Boot microservices architecture f
 - **CI/CD Pipeline**: Deployment pipeline with status tracking
 
 ### Frontend Architecture Management
+
+![Frontend development](https://github.com/Reaishma/Cerebro-Apex/blob/main/Screenshot_20250903-183903_1.jpg)
+
 - **Component Architecture**: React/Vue/Angular component simulation
 - **Build Tools**: Webpack/Vite build process visualization
 - **State Management**: Redux/Vuex state flow demonstration
